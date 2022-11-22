@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Faculty.master.cs" Inherits="Masterpage_Assignment.Faculty" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            height: 26px;
+        }
+        .auto-style3 {
+            height: 26px;
+            width: 347px;
+        }
+        .auto-style4 {
+            width: 100%;
+            height: 653px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table class="auto-style1">
+                <tr>
+                    <td style="background-color: #000080">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <table class="auto-style1">
+                            <tr>
+                                <td class="auto-style3">
+                                    <table class="auto-style4">
+                                        <tr>
+                                            <td>
+                                                <br />
+                                                <br />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Faculty/Faculty_login.aspx">Home</asp:HyperLink>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Guest_viewpage.aspx">Logout</asp:HyperLink>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <br />
+                                                <br />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="auto-style2">
+                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                    </asp:ContentPlaceHolder>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background-color: #000080">&nbsp;</td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
